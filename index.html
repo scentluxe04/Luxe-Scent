@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luxe Scent | Aroma e luksit</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            <span>LS</span>
+            <h1>LUXE SCENT</h1>
+            <p>PERFUMES</p>
+        </div>
+
+        <nav class="navbar">
+            <a href="#">Kryefaqja</a>
+
+            <div class="nav-dropdown">
+
+                <button type="button"
+                        class="nav-dropdown-toggle"
+                        aria-expanded="false">
+                    Parfumet
+                </button>
+
+                <div class="dropdown-menu">
+
+                    <a href="#perfumes"
+                        class="nav-category-filter"
+                        data-category="FEMRA">
+                        Për femra
+                    </a>
+
+                    <a href="#perfumes"
+                        class="nav-category-filter"
+                        data-category="MESHKUJ">
+                        Për meshkuj
+                    </a>
+
+                    <a href="#perfumes"
+                        class="nav-category-filter"
+                        data-category="UNISEX">
+                        Unisex
+                    </a>
+
+                </div>
+            </div>
+
+            <a href="#offers">Ofertat</a>
+            <a href="#about">Rreth Nesh</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+
+        <button class="cart-btn" id="cartButton">
+    🛒 Shporta <span id="cartCount">0</span>
+        </button>
+
+        <a href="#contact" class="order-btn">
+            Porosit
+        </a>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="small-title">
+                    LUXE SCENT PERFUMES
+                </p>
+
+                <h2>
+                    Aroma që<br>
+                    <span>lë gjurmë.</span>
+                </h2>
+
+                <p class="hero-text">
+                    Zbulo koleksionin tonë të parfumeve
+                    dhe gjej aromën që përshtatet me ty.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#perfumes" class="primary-btn">
+                        Shiko parfumet
+                    </a>
+
+                    <a href="#offers" class="secondary-btn">
+                        Shiko ofertat
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+                <img src="images/logo.jpg" alt="Luxe Scent Logo">
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="categories">
+
+            <div class="section-heading">
+                <p>ZGJIDH AROMËN TËNDE</p>
+                <h2>Koleksioni ynë</h2>
+            </div>
+
+
+            <div class="category-container">
+
+                <div class="category-card">
+                    <span>01</span>
+                    <h3>Për Femra</h3>
+                    <p>Aroma elegante dhe femërore.</p>
+                    <a href="#perfumes" class="category-filter" data-category="FEMRA">Eksploro →</a>
+                </div>
+
+
+                <div class="category-card">
+                    <span>02</span>
+                    <h3>Për Meshkuj</h3>
+                    <p>Aroma karakteristike dhe të fuqishme.</p>
+                    <a href="#perfumes" class="category-filter" data-category="MESHKUJ">Eksploro →</a>
+                </div>
+
+
+                <div class="category-card">
+                    <span>03</span>
+                    <h3>Unisex</h3>
+                    <p>Aroma për çdo stil dhe personalitet.</p>
+                    <a href="#perfumes" class="category-filter" data-category="UNISEX">Eksploro →</a>
+                </div>
+
+                <div class="all-products">
+                    <a href="#perfumes" id="showAll">Shiko të gjitha parfumet</a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section id="perfumes" class="products">
+
+            <div class="section-heading">
+
+                <p>KOLEKSIONI</p>
+
+                <h2>Parfumet më të kërkuara</h2>
+
+            </div>
+
+            <div class="search-container">
+
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Kërko parfumin..."
+                >
+
+                <button id="searchButton">🔎</button>
+
+            </div>
+
+            <div class="product-container"></div>
+
+            <div class="pagination" id="pagination"></div>
+
+        </section>
+
+
+        <!-- ================= OFFER ================= -->
+
+        <section id="offers" class="offer">
+
+            <div>
+
+                <p>OFERTA SPECIALE</p>
+
+                <h2>
+                    Oferta
+                    <span>Së Shpejti</span>
+                </h2>
+
+                <p>
+                    Për momentin nuk kemi oferta aktive.
+                    Qëndro me ne për të zbuluar ofertat
+                    dhe uljet e ardhshme.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="about">
+
+            <div class="about-image">
+                <div class="about-logo">
+                    LS
+                </div>
+            </div>
+
+
+            <div class="about-content">
+
+                <p>LUXE SCENT</p>
+
+                <h2>
+                    Aroma e luksit.
+                </h2>
+
+                <p>
+                    Në Luxe Scent besojmë se parfumi është më shumë
+                    se një aromë. Është pjesë e stilit, personalitetit
+                    dhe kujtimeve tona.
+                </p>
+
+                <p>
+                    Zbulo koleksionin tonë dhe gjej aromën
+                    që të përfaqëson.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact">
+
+    <div class="section-heading">
+
+        <p>KONTAKT</p>
+
+        <h2>Porosit parfumin tënd</h2>
+
+    </div>
+
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Luxe Scent</h3>
+
+            <p>
+                📞
+                <a href="https://wa.me/355689506887" target="_blank">
+                    068 950 6887
+                </a>
+            </p>
+
+            <p>
+                📷
+                <a href="https://www.instagram.com/luxescent.al/" target="_blank">
+                    @luxescent.al
+                </a>
+            </p>
+
+            <p>
+                📍 Tiranë, Albania
+            </p>
+
+
+        </div>
+
+
+        <div class="contact-buttons">
+
+            <a href="https://www.instagram.com/luxescent.al/" 
+               target="_blank" 
+               class="contact-btn">
+                Instagram
+            </a>
+
+            <a href="https://wa.me/355689506887" 
+               target="_blank" 
+               class="contact-btn">
+                WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            LUXE SCENT
+        </div>
+
+        <p>
+            Aroma e luksit.
+        </p>
+
+        <small>
+            © 2026 Luxe Scent. All rights reserved.
+        </small>
+
+    </footer>
+    <div class="product-modal" id="productModal">
+
+    <div class="modal-content">
+
+        <button class="close-modal" id="closeModal">&times;</button>
+
+        <div class="modal-image">
+            <img id="modalImage" src="" alt="">
+        </div>
+
+        <div class="modal-info">
+
+            <p id="modalCategory"></p>
+
+            <h2 id="modalName"></h2>
+
+            <strong id="modalPrice"></strong>
+
+            <div class="modal-details">
+
+    <p>
+        <strong>Notat e sipërme:</strong>
+        <span id="modalTopNotes"></span>
+    </p>
+
+    <p>
+        <strong>Notat e zemrës:</strong>
+        <span id="modalHeartNotes"></span>
+    </p>
+
+    <p>
+        <strong>Notat e bazës:</strong>
+        <span id="modalBaseNotes"></span>
+    </p>
+
+    <p>
+        <strong>Madhësia:</strong>
+        <span id="modalSize"></span>
+    </p>
+
+    <p>
+        <strong>Përshkrimi:</strong>
+        <span id="modalDescription"></span>
+    </p>
+
+</div>
+
+    <div class="purchase-row">
+
+    <div class="quantity-container">
+        <strong>Sasia:</strong>
+
+        <div class="quantity-controls">
+    <button type="button" id="decreaseQuantity">−</button>
+
+    <input
+        type="number"
+        id="quantity"
+        value="1"
+        min="1"
+        step="1"
+    >
+
+    <button type="button" id="increaseQuantity">+</button>
+</div>
+    </div>
+
+    <button class="order-modal">Shto në shportë</button>
+
+</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="cart-overlay" id="cartOverlay">
+
+    <div class="cart-panel">
+
+        <button class="close-cart" id="closeCart">&times;</button>
+
+        <h2>Shporta juaj</h2>
+
+        <div id="cartItems">
+            <p class="empty-cart">Shporta është bosh.</p>
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+                <span>Totali:</span>
+                <strong id="cartTotal">0 L</strong>
+            </div>
+
+            <button class="checkout-btn" id="checkoutButton">
+                Vazhdo me porosinë
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="checkout-overlay" id="checkoutOverlay">
+
+    <div class="checkout-panel">
+
+        <button class="close-checkout" id="closeCheckout">&times;</button>
+
+        <h2>Plotëso porosinë</h2>
+
+        <p class="checkout-subtitle">
+            Plotëso të dhënat më poshtë për të përfunduar porosinë.
+        </p>
+
+        <form id="checkoutForm">
+
+            <div class="form-group">
+                <label for="customerName">Emri dhe Mbiemri</label>
+                <input type="text" id="customerName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="customerPhone">Numri i telefonit</label>
+                <input type="tel" id="customerPhone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="customerCity">Qyteti</label>
+                <input type="text" id="customerCity" required>
+            </div>
+
+            <div class="form-group">
+                <label for="customerAddress">Adresa</label>
+                <textarea id="customerAddress" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="paymentMethod">Mënyra e pagesës</label>
+
+                <select id="paymentMethod" required>
+                    <option value="">Zgjidh mënyrën e pagesës</option>
+                    <option value="cash">Cash në dorëzim</option>
+                </select>
+            </div>
+
+            <div class="checkout-summary">
+
+                <span>Totali i porosisë:</span>
+
+                <strong id="checkoutTotal">
+                    0 L
+                </strong>
+
+            </div>
+
+            <button type="submit" class="confirm-order">
+                Konfirmo porosinë
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
